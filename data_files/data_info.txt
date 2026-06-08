@@ -1,0 +1,4 @@
+data sourced from zillow housing research data and represents
+average annual appreciation from 01/31/2000 - 04/30/2026
+Values calculated by finding monthly CAGR and then converting to annual
+CAGR see calc.py for exact equation
