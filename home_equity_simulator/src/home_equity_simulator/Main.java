@@ -94,7 +94,7 @@ public class Main {
 
                 case "4":
                     // Branch control out to the standalone educational information loop
-                    handleInformationMenu();
+                    Information.displayMenu(scanner);
                     break;
 
                 case "5":
@@ -109,80 +109,7 @@ public class Main {
         }
         scanner.close();
     }
- // =================================================================
-    // NEW COMPONENT: Standalone Educational Information Sub-Menu
-    // =================================================================
-    /**
-     * Creates an isolated menu interface allowing users to explore the 
-     * structural economic concepts backing the data workflows.
-     */
-    private static void handleInformationMenu() {
-        boolean inInfoMenu = true;
-        
-        while (inInfoMenu) {
-            System.out.println("\n================================================================================");
-            System.out.println("                         SYSTEM INFORMATION CENTER                              ");
-            System.out.println("================================================================================");
-            System.out.println("1. Understanding the Disinvestment & Devaluation Penalty");
-            System.out.println("2. Demystifying Compound Annual Growth Rate (CAGR) in Housing");
-            System.out.println("3. Comparing Commercial vs. Progressive Lending Philosophy");
-            System.out.println("4. Return to Main Options Menu");
-            System.out.print("Select a topic to read (1-4): ");
 
-            String infoChoice = scanner.nextLine().trim();
-            System.out.println("\n--------------------------------------------------------------------------------");
-
-            switch (infoChoice) {
-                case "1":
-                    System.out.println("TOPIC: DISINVESTMENT & THE DEVALUATION PENALTY\n");
-                    System.out.println("In urban macroeconomics, the devaluation penalty describes the structural drag");
-                    System.out.println("imposed on property values within historically redlined or systematically neglected");
-                    System.out.println("neighborhoods. Decades of low municipal infrastructure spending, commercial flight,");
-                    System.out.println("and low commercial lending volumes create hard capital deficits.");
-                    System.out.println("According to data from the Brookings Institution, homes in structurally devalued");
-                    System.out.println("neighborhoods are undervalued by an average of 23% compared to identical homes");
-                    System.out.println("situated in highly invested zones, suppressing compounding generational equity.");
-                    break;
-
-                case "2":
-                    System.out.println("TOPIC: COMPOUND ANNUAL GROWTH RATE (CAGR) & EXPONENTIAL DIVERGENCE\n");
-                    System.out.println("Housing market values compound exponentially over time rather than growing linearly.");
-                    System.out.println("The CAGR represents the precise smoothed rate at which real estate assets grow");
-                    System.out.println("annually over the data's lifetime. Even microscopic variances in annual appreciation");
-                    System.out.println("rates ripple into catastrophic divides over a 20-year loop.");
-                    System.out.println("For instance, a $500,000 baseline home appreciating at 3% finishes at roughly $903,000.");
-                    System.out.println("The exact same asset appreciating at 6.5% finishes at over $1.76 million, leaving");
-                    System.out.println("a massive $850,000 wealth chasm triggered purely by structural location variance.");
-                    break;
-
-                case "3":
-                    System.out.println("TOPIC: INSTITUTIONAL UNDERWRITING PHILOSOPHIES\n");
-                    System.out.println("This system models three distinct structural pathways to financial inclusion:\n");
-                    System.out.println("* Standard Commercial Bank: Focuses heavily on gatekeeping. Enforces strict asset");
-                    System.out.println("  and credit minimums (e.g., 640 credit floor) to insulate corporate capital.");
-                    System.out.println("* Equitable First-Time Buyer: Focuses on optimization. Softens credit score cutoffs");
-                    System.out.println("  and actively leverages existing liquid savings to maximize consumer safety boundaries.");
-                    System.out.println("* Progressive Lender Tier: Focuses on proactive systemic intervention. Leverages aggressive");
-                    System.out.println("  multipliers, introduces matching cash grants, and stabilizes growth minimums to heal");
-                    System.out.println("  the historic opportunity gaps exposed by the Zillow datasets.");
-                    break;
-
-                case "4":
-                    System.out.println("Returning to main menu framework...");
-                    inInfoMenu = false;
-                    break;
-
-                default:
-                    System.out.println("Invalid selection. Please enter a number between 1 and 4.");
-                    break;
-            }
-            System.out.println("--------------------------------------------------------------------------------");
-            if (inInfoMenu) {
-                System.out.println("Press [ENTER] to return to the Information Center directory...");
-                scanner.nextLine();
-            }
-        }
-    }
     private static User promptForUserProfile(String prefix) {
         System.out.print("Enter " + prefix + "Applicant Name: ");
         String name = scanner.nextLine().trim();
