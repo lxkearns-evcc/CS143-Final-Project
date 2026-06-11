@@ -23,3 +23,7 @@
 hs_err_pid*
 replay_pid*
 /.metadata/
+
+#misc files
+presentation_notes.odt
+*.lock

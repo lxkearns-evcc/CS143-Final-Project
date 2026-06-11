@@ -18,6 +18,6 @@ public class FirstTimeBuyer implements LendingProgram {
 
     @Override
     public String getProgramName() {
-        return "Equitable First-Time Buyer Assistance";
+        return "First-Time Buyer Assistance";
     }
 }
