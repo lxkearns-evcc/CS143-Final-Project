@@ -3,7 +3,19 @@
 A professional-grade, terminal-driven housing equity simulation engine written in Java. This platform models systemic wealth divides, institutional underwriting boundaries, and the long-term compounding implications of housing policies across dynamic, county-level real estate datasets. Housing data was sourced from Zillow Research Data https://www.zillow.com/research/data/ Dataset: ZHVI Single-Family Homes Time Series ($) appreciation rates represent data avg annual appreciation from 2001 - 2026. 
 
 ---
-
+## Object Model
+1. **User** - Represents a prospective homeowner
+2. **LenderProgram** - Interface each lender class implements this
+   * CommericalLender
+   * FirstTimeBuyer
+   * ProgressiveLender
+3. **Underwriting** - Service class that assists with updating User maximum loan approval
+4. **ZipCode** - Represents housing information for a zip code
+5. **ZipCodeLoader** - data loader that pulls information from a file to create ZipCode objects
+6. **AnalyticsEngine** - Pulls variables from all objects to create reports
+7. **Information** - Stores information about the app
+8. **Main** - Drives the application through a CLI
+   
 ## 🏛️ Core Architectural Overview
 
 The system is engineered as a clean, multi-layered CLI utility, separated into dedicated functional boundaries to preserve the **Single Responsibility Principle (SRP)**:
