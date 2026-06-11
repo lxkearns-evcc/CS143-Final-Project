@@ -13,7 +13,7 @@ def t(in_file):
         for d in data:
             try:
                 d["appreciation"] = (1+((float(d["last_date"])/float(d["first_date"]))**(1/325)-1))**12-1
-                d["appreciation"] = round(d["appreciation"]*100,3)
+                d["appreciation"] = round(d["appreciation"],3)
                 
                 all_app[d["appreciation"]] = d
                 out.append({"zip_code":d["regionname"],"county_name":d["countyname"],'state':d['state'],'avg_home_price':d['last_date'],
