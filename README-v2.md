@@ -1,8 +1,6 @@
 # Housing Equity & Wealth Simulator
 
-A professional-grade, terminal-driven macroeconomic simulation engine written in Java. This platform models systemic wealth divides, institutional underwriting boundaries, and the long-term compounding implications of housing policies across dynamic, county-level real estate datasets.
-
-Developed entirely on pure object-oriented design principles—without heavy third-party build frameworks—the application implements runtime polymorphism, structural encapsulation, strategy-driven policy enforcement, and decoupled test-driven verification pipelines.
+A professional-grade, terminal-driven housing equity simulation engine written in Java. This platform models systemic wealth divides, institutional underwriting boundaries, and the long-term compounding implications of housing policies across dynamic, county-level real estate datasets. Housing data was sourced from Zillow Research Data https://www.zillow.com/research/data/ Dataset: ZHVI Single-Family Homes Time Series ($) appreciation rates represent data avg annual appreciation from 2001 - 2026. 
 
 ---
 
