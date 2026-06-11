@@ -25,9 +25,6 @@ The system is engineered as a clean, multi-layered CLI utility, separated into d
 
 Because this project operates as a traditional Java application without Maven or Gradle, dependencies and build pipelines are mapped relative to the absolute root directory:
 
-Code output
-README-v2.md generated successfully.
-
 ```text
 my-equity-simulator/                  # Project Root Directory
 ├── data/                             # Dedicated Market Datasets Directory
