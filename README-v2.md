@@ -19,7 +19,7 @@ The system is engineered as a clean, multi-layered CLI utility, separated into d
 
 ---
 
-## 📁 Project Directory Structure
+## 📁 Project Notes
 
 Because this project operates as a traditional Java application without Maven or Gradle, dependencies and build pipelines are mapped relative to the absolute root directory:
 ##🛠️ Prerequisites & Local Setup
