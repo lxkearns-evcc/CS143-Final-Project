@@ -4,17 +4,27 @@ A professional-grade, terminal-driven housing equity simulation engine written i
 
 ---
 ## Object Model
-1. **User** - Represents a prospective homeowner
-2. **LenderProgram** - Interface each lender class implements this
-   * CommericalLender
-   * FirstTimeBuyer
-   * ProgressiveLender
-3. **Underwriting** - Service class that assists with updating User maximum loan approval
-4. **ZipCode** - Represents housing information for a zip code
-5. **ZipCodeLoader** - data loader that pulls information from a file to create ZipCode objects
-6. **AnalyticsEngine** - Pulls variables from all objects to create reports
-7. **Information** - Stores information about the app
-8. **Main** - Drives the application through a CLI
+1. **User**
+   * Represents a prospective homeowner
+   * Data is strictly about the user, no other objects present
+3. **LenderProgram** - Interface that each lender class implements
+   * CommericalLender - handles commercial lending criteria
+   * FirstTimeBuyer - handles first time buyer criteria
+   * ProgressiveLender - handles progressive lender criteria
+4. **Underwriting**
+   * Service class that assists with updating User maximum loan approval
+5. **ZipCode**
+   * Represents housing information for a zip code
+7. **ZipCodeLoader**
+   * data loader that pulls information from a file to create ZipCode objects
+   * returns ArrayList<ZipCode>
+9. **AnalyticsEngine**
+    * Pulls variables from all objects to create reports
+    * maintains separation of concerns
+11. **Information**
+    * Stores information about the app, definitions, ancillary and data sources
+12. **Main**
+    * Drives the application through a CLI
    
 ## 🏛️ Core Architectural Overview
 
