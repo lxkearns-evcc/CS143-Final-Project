@@ -24,31 +24,6 @@ The system is engineered as a clean, multi-layered CLI utility, separated into d
 ## 📁 Project Directory Structure
 
 Because this project operates as a traditional Java application without Maven or Gradle, dependencies and build pipelines are mapped relative to the absolute root directory:
-```
-my-equity-simulator/                  # Project Root Directory
-├── data/                             # Dedicated Market Datasets Directory
-│   ├── King_County.csv
-│   └── etc.
-├── lib/                              # External Reference Libraries
-│   └── junit-standalone.jar          # JUnit Platform Console Launcher Standalone JAR
-└── src/                              # Source Code Tree
-    ├── home_equity_simulator/        # Main Application Package Boundary
-    │   ├── Main.java                 # Central Bootstrapper & CLI Orchestrator
-    │   ├── AnalyticsEngine.java      # Matrix Multipliers & Report Synthesizer
-    │   ├── User.java                 # Financial Profile & Compound Equations
-    │   ├── ZipCode.java              # Regional Metric Immutable Data Shells
-    │   ├── ZipCodeLoader.java        # I/O Stream Parser & File Scanner
-    │   ├── LendingProgram.java       # Polymorphic Abstract Strategy Interface
-    │   ├── CommercialLender.java     # Underwriting Concrete Strategy A
-    │   ├── FirstTimeBuyerProgram.java# Underwriting Concrete Strategy B
-    │   ├── ProgressiveLender.java    # Underwriting Concrete Strategy C
-    │   ├── Underwriting.java         # Programmatic Gateway State Changer
-    │   └── info/
-    │       └── InfoCenter.java       # Structural Documentation Interface Loop
-    ├── MainTest.java                 # Input Pipeline Boundary Validation Test Suite
-    └── AnalyticsEngineTest.java      # Output-Capture Matcher Test Suite
-data_files/                           # Raw data files and python script to process
-```
 ##🛠️ Prerequisites & Local Setup
 
 THe project was not built with a framework. Unit testing is done with JUnit 5 standalone libraries.
