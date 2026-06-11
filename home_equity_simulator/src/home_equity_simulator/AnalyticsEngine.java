@@ -8,9 +8,6 @@ import java.util.Collections;
  */
 public class AnalyticsEngine {
 
-    // =================================================================
-    // WORKFLOW 1: City-Wide Accessibility & Cut-Off Report
-    // =================================================================
     /**
      * Evaluates a single user against all registered zip codes using their current 
      * underwriting approval status. Sorts results by wealth generation and prints 
@@ -73,9 +70,6 @@ public class AnalyticsEngine {
         System.out.println("=====================================================================================\n");
     }
 
-    // =================================================================
-    // WORKFLOW 2: Two-User Wealth Disparity Report (By Lender)
-    // =================================================================
     /**
      * Compares two distinct user profiles across every individual lending ruleset.
      * Maps out the specific neighborhood appreciation rate that drove the calculation.
@@ -136,9 +130,7 @@ public class AnalyticsEngine {
         return new double[]{peakWealth, associatedRate};
     }
 
-    // =================================================================
-    // WORKFLOW 3: Single-User Side-by-Side Lender Impact Matrix
-    // =================================================================
+
     /**
      * Evaluates a single applicant sequentially across all 3 lending programs, 
      * outputting a multi-column side-by-side market accessibility map including baseline rates.
@@ -190,14 +182,10 @@ public class AnalyticsEngine {
                 eqCell, 
                 progressiveCell);
         }
-        System.out.println("-------------------------------------------------------------------------------------------------");
-        System.out.println("*Note: Wealth under Progressive Lender tier accounts for targeted community reinvestment minimums.");
         System.out.println("=================================================================================================");
     }
 
-    // =================================================================
-    // COMPONENT HELPER: Static Nested Report Card Data Structure
-    // =================================================================
+
     private static class AreaReportCard implements Comparable<AreaReportCard> {
         private final ZipCode zipCode;
         private final double projectedWealth;

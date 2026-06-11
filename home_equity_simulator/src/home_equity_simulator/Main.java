@@ -102,7 +102,7 @@ public class Main {
 	                break;
 	
 	            case "5":
-	                System.out.println("\nThank you for utilizing the housing equity simulator. Exiting baseline engine.");
+	                System.out.println("\nThank you for utilizing the housing equity simulator.");
 	                running = false;
 	                break;
 	                	
